@@ -1,6 +1,6 @@
 function getData() {
-    let nombre = document.getElementById("nombre").value;
-    let apellido = document.getElementById("apellido").value;
+        let nombre = document.getElementById("nombre").value;
+        let apellido = document.getElementById("apellido").value;
     let check = document.getElementById("check").checked;
     console.log('check', check)
     if (nombre == "" || apellido == "" || !check) {

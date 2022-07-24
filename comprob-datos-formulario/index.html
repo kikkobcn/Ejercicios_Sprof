@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #titulo{
+            text-align: center;
+            color: blue;
+        }
+
+        /* input:invalid {
+            box-shadow: 0 0 5px 1px red;
+}
+
+        input:focus:invalid {
+            box-shadow: none;
+        } */
+        /* #formulario{
+            display:flex;
+            justify-items: center;
+            border: solid 1px black;
+            width:50%; 
+        } */
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">Alta nuevo Usuario</h1> 
+
+    <form action="" id="formulario" method="get">
+        <label for="dato1" id="datol1">*Nombre:  </label>
+        <input type="text" name="nombre" id="dato1" placeholder="Nombre" required> <a id="mens1"></a>
+        <br><br>
+
+        <label for="dato2" id="datol2">*Apellido:  </label>
+        <input type="text" name="apellido" id="dato2" placeholder="Apellido" required><a id="mens1"></a><br><br>
+
+        <label for="dato3" id="datol3">*DNI:  </label>   
+        <input type="text"name="dni" id="dato3" placeholder="DNI" required><a id="mens1"></a><br><br>
+
+        <label for="dato4" id="datol4">Mail:  </label>
+        <input type="mail" name="mail" id="dato4" placeholder="Mail">
+
+        <label for="dato5" id="datol5">*Telefono:  </label>
+        <input type="Tel" name="tel" id="dato5" placeholder="Telefono" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required><a id="mens1"></a>
+        <br><br>
+
+        <button onclick="envio()">Enviar </button>
+    </form>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
